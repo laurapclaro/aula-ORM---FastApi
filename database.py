@@ -12,7 +12,8 @@ engine = create_engine(DATABASE_URL)
 
 session = sessionmaker(bind=engine)
 
-#Base para todos os models do banco
+#Base para todos os models do 
+Base = declarative_base()
 
 def get_db():
     db = session()
