@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI - Pelo Futuro do Trabalho</title>
+    <style>
+        /* Reset básico e tipografia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Menu */
+        header {
+            background-color: #ffffff;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #E3000F; /* Vermelho SENAI */
+            font-size: 32px;
+            font-weight: 900;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E3000F;
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80&#39;") center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        /* Botão de Destaque */
+        .btn-destaque {
+            display: inline-block;
+            background-color: #E3000F;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(227, 0, 15, 0.3);
+        }
+
+        .btn-destaque:hover {
+            background-color: #cc000d;
+            transform: translateY(-3px);
+        }
+
+        /* Seção de Informações (Cards) */
+        .sobre {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .sobre h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #222;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border-bottom: 4px solid #E3000F;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #E3000F;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            header { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">SENAI</a>
+        <nav>
+            <a href="#sobre">Sobre a Instituição</a>
+            <a href="#unidades">Unidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Transforme o seu futuro</h1>
+        <p>A maior complexo de educação profissional da América Latina. Prepare-se para o mercado de trabalho com cursos técnicos, de qualificação e graduação focados na indústria moderna.</p>
+       
+        <a href="/listar_cursos" class="btn-destaque">Nossos cursos</a>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Por que escolher o SENAI?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Infraestrutura de Ponta</h3>
+                <p>Laboratórios modernos e equipamentos idênticos aos usados na indústria real, garantindo aprendizado prático de verdade.</p>
+            </div>
+            <div class="card">
+                <h3>Alta Empregabilidade</h3>
+                <p>Nossos ex-alunos são altamente procurados pelo mercado. Formamos profissionais prontos para resolver os desafios da indústria.</p>
+            </div>
+            <div class="card">
+                <h3>Cursos Atualizados</h3>
+                <p>Grade curricular focada na Indústria 4.0, inovação tecnológica, robótica, automação e inteligência artificial.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Escola SENAI. Todos os direitos reservados.</p>
+        <p><small>Este é um projeto acadêmico de demonstração em HTML/CSS.</small></p>
+    </footer>
+
+</body>
+</html>
